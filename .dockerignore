@@ -1,0 +1,15 @@
+# Docker files 
+.dockerignore
+Dockerfile
+
+# Application files
+node_modules/
+dist/
+.env
+.git/
+.gitignore
+.prettierignore
+.prettierrc
+eslint.config.mjs
+LICENSE
+README.md
