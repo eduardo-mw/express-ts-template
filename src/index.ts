@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app: Express = express();
+app.use(express.json());
 const port = process.env.PORT || 5002;
 
 app.get("/", (req: Request, res: Response) => {
@@ -18,5 +19,8 @@ import cars from "./routes/cars";
 app.use("/cars", cars);
 
 app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
+  console.log(
+    "\x1b[36m%s\x1b[0m",
+    `[server]: Server is running at http://localhost:${port}`,
+  );
 });
