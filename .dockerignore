@@ -7,9 +7,11 @@ node_modules/
 dist/
 .env
 .git/
+.github/
 .gitignore
 .prettierignore
 .prettierrc
 eslint.config.mjs
 LICENSE
 README.md
+routes.rest
