@@ -1,4 +1,4 @@
-FROM node:20.11.1-bookworm-slim
+FROM node:20.11.1-bookworm
 
 # Set the working directory in the container
 WORKDIR /app

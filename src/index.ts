@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+import { AnsiColors } from "./const";
 
 dotenv.config();
 
@@ -20,7 +21,7 @@ app.use("/cars", cars);
 
 app.listen(port, () => {
   console.log(
-    "\x1b[36m%s\x1b[0m",
+    AnsiColors.FG_CYAN,
     `[server]: Server is running at http://localhost:${port}`,
   );
 });
